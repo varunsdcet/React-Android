@@ -1,0 +1,58 @@
+Inside project - android - app - src- main - assets  create folder
+Bundle create in root  
+run this command  react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res
+
+then go project -android  run command ./gradlew clean cd../
+then root project react-native run-android
+
+then open android studio manifest file
+android:allowBackup="false"
+tools:ignore="GoogleAppIndexingWarning"
+
+android:usesCleartextTraffic="true"
+
+Please ensure don't open manifest xml debug
+
+Appicon
+project - android - src - main - res - replace mipmap folders
+
+Build
+build - generate signedapl - path - key store password then release select both signature - finish
+
+
+
+PushNotification
+
+add service in manifest
+<service
+android:name="com.dieam.reactnativepushnotification.modules.RNPushNotificationListenerService"
+android:exported="false" >
+<intent-filter>
+<action android:name="com.google.firebase.MESSAGING_EVENT" />
+</intent-filter>
+</service>
+<meta-data android:name="com.dieam.reactnativepushnotification.notification_channel_name"
+android:value="rn-push-notification-channel"/>
+
+<meta-data android:name="com.dieam.reactnativepushnotification.notification_channel_description"
+android:value="rn-push-notification-channel"/>
+</application>
+----
+
+then add claspath in android gradelw project
+classpath("com.android.tools.build:gradle:3.4.2")
+classpath 'com.google.gms:google-services:4.2.0'
+
+then add implementation android gradelw module
+implementation "com.facebook.react:react-native:+" // From node_modules
+implementation 'com.google.android.gms:play-services-base:16.1.0'
+implementation 'com.google.firebase:firebase-core:16.0.6'
+implementation 'com.google.firebase:firebase-messaging:17.6.0'
+
+AND THEN ADD
+LAST LINE IN  GRADELW MODEULE
+apply plugin: 'com.google.gms.google-services'
+
+SERVICE LIST ANDROID - APP DRAG SERVICE LIST
+
+
