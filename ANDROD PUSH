@@ -59,3 +59,8 @@ IMPLEMENTION WOULD BE REMOVE GRADELW
 
 settings -> about phone tap anywhere
 then allow usb debugging in developer options
+
+
+//Google login sha
+android studio - help - find action - search gradle - app- signin report double click the nprint sha1 key.
+gradelw change only
