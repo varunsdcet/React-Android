@@ -22,7 +22,7 @@ build - generate signedapl - path - key store password then release select both 
 
 
 PushNotification
-
+// Android - app - servicelist drag
 add service in manifest
 <service
 android:name="com.dieam.reactnativepushnotification.modules.RNPushNotificationListenerService"
