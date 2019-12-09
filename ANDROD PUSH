@@ -19,7 +19,8 @@ project - android - src - main - res - replace mipmap folders
 Build
 build - generate signedapl - path - key store password then release select both signature - finish
 
-
+gesture handler
+https://kmagiera.github.io/react-native-gesture-handler/docs/getting-started.html
 
 PushNotification
 // Android - app - servicelist drag
