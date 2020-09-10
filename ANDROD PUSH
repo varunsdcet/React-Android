@@ -45,18 +45,20 @@ add service in manifest
 
         <meta-data android:name="com.dieam.reactnativepushnotification.notification_channel_description"
             android:value="rn-push-notification-channel"/>
+            <meta-data android:name="com.dieam.reactnativepushnotification.notification_foreground"
+android:value="true"/>
 </application>
 ----
 
 then add claspath in android gradelw project
 classpath("com.android.tools.build:gradle:3.4.2")
-classpath 'com.google.gms:google-services:4.2.0'
+classpath 'com.google.gms:google-services:4.3.3'
 
 then add implementation android gradelw module
 implementation "com.facebook.react:react-native:+" // From node_modules
-implementation 'com.google.android.gms:play-services-base:16.1.0'
-implementation 'com.google.firebase:firebase-core:16.0.6'
-implementation 'com.google.firebase:firebase-messaging:17.6.0'
+implementation 'com.google.android.gms:play-services-base:17.4.0'
+implementation 'com.google.firebase:firebase-core:17.5.0'
+implementation 'com.google.firebase:firebase-messaging:20.2.4'
 
 AND THEN ADD
 LAST LINE IN  GRADELW MODEULE
