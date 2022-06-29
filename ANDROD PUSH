@@ -78,3 +78,8 @@ gradelw change only
 
 
 //delete drawble and raw
+
+
+google sha
+$ keytool -list -v -keystore ./debug.keystore
+in android/app folder for debug
