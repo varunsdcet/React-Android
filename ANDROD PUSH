@@ -5,6 +5,9 @@ run this command  react-native bundle --platform android --dev false --entry-fil
 then go project -android  run command ./gradlew clean cd../
 then root project react-native run-android
 
+delete drawable folder
+assembleRelease
+
 then open android studio manifest file
 android:allowBackup="false"
 tools:ignore="GoogleAppIndexingWarning"
