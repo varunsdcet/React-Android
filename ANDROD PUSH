@@ -1,3 +1,5 @@
+https://github.com/facebook/metro/issues/1205
+
 Inside project - android - app - src- main - assets  create folder
 Bundle create in root  
 run this command  react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res
